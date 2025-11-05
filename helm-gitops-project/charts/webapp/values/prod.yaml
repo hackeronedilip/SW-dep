@@ -5,7 +5,7 @@ port: 5050
 replicaCount: 2 # usually prod has >1
 image:
   repository: 959975882219.dkr.ecr.us-east-1.amazonaws.com/tic_tac_toe
-  tag: 169ad56e583bac26eb4677c41d7c1dfd3ae86af3
+  tag: 169ad56e583bac26eb4677c41d7c1dfd3ae86af2
   pullPolicy: Always
 service:
   type: ClusterIP
