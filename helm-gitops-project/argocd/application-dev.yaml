@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/Kishorebskr/SW-dep.git'
+    repoURL: 'https://github.com/hackeronedilip/SW-dep.git'
     targetRevision: HEAD
     path: helm-gitops-project/charts/webapp
     helm:

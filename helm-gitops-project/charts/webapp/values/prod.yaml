@@ -1,18 +1,15 @@
 deploymentName: webapp-prod
 namespace: production
 environment: production
-port: 80
-replicaCount: 2   # usually prod has >1
-
+port: 5050
+replicaCount: 2 # usually prod has >1
 image:
-  repository: 222964728025.dkr.ecr.us-east-1.amazonaws.com/sw_ecr
-  tag: prodv1
+  repository: 959975882219.dkr.ecr.us-east-1.amazonaws.com/tic_tac_toe
+  tag: 169ad56e583bac26eb4677c41d7c1dfd3ae86af3
   pullPolicy: Always
-
 service:
   type: ClusterIP
-  port: 80
-
+  port: 5050
 ingress:
   enabled: true
   className: nginx
@@ -20,8 +17,7 @@ ingress:
   hostnames:
     - prod-webapp.local
   annotations: {}
-  addRootPath: true   # root path added only in prod
-
+  addRootPath: true # root path added only in prod
 resources:
   requests:
     memory: "128Mi"
